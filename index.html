@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MADZSTORE</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+    body {
+      background-color: #0b0b2b;
+      color: #fff;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #00f0ff;
+      text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
+      margin: 20px 0;
+      animation: flicker 2s infinite alternate;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 400px;
+      box-shadow: 0 0 15px #00f0ff55;
+      animation: glow 2s infinite alternate;
+    }
+    .card p {
+      font-size: 1rem;
+      margin: 5px 0;
+      color: #00f0ff;
+      text-shadow: 0 0 8px #00f0ff, 0 0 20px #00f0ff;
+      animation: flickerText 3s infinite;
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 10px #00f0ff55; }
+      to { box-shadow: 0 0 25px #00f0ff; }
+    }
+    @keyframes flicker {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 1;
+      }
+      20%, 24%, 55% {
+        opacity: 0.5;
+      }
+    }
+    @keyframes flickerText {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+  </style>
+</head>
+<body>
+  <h1>MADZSTORE</h1>
+
+  <div class="card">
+    <p>3GB RAM - : Rp 2.5k</p>
+    <p>4GB RAM - : Rp 3k</p>
+    <p>5GB RAM - : Rp 4k</p>
+    <p>6GB RAM - : Rp 5k</p>
+    <p>7GB RAM - : Rp 6k</p>
+    <p>8GB RAM - : Rp 7k</p>
+    <p>9GB RAM - : Rp 8k</p>
+    <p>10GB RAM - : Rp 9k</p>
+    <p>UNLIMITED - : Rp 10k</p>
+    <p>RESELLER PANEL 7K MANEN VIA TELE</p>
+  </div>
+
+</body>
+</html>
